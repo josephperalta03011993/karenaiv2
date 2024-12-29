@@ -1,0 +1,33 @@
+open google
+open youtube
+open gmail
+what time is it 
+open notepad
+open word
+open powerpoint
+open excel
+open task manager
+open paint
+open calculator
+open snipping tool
+open chat gpt
+open cmd
+open media player
+open file explorer
+search for __________ on youtube
+play ________________ on youtube
+play local music
+set an alarm for
+set brightness to
+set volume to max, min, 75, 50
+say:
+- nice
+- thank you
+- karen
+- exit
+- go to sleep
+search for __________ on google
+tell a joke
+close <app_name>
+# write in notepad
+i want to write
