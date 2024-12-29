@@ -1,33 +1,90 @@
-open google
-open youtube
-open gmail
-what time is it 
-open notepad
-open word
-open powerpoint
-open excel
-open task manager
-open paint
-open calculator
-open snipping tool
-open chat gpt
-open cmd
-open media player
-open file explorer
-search for __________ on youtube
-play ________________ on youtube
-play local music
-set an alarm for
-set brightness to
-set volume to max, min, 75, 50
-say:
-- nice
-- thank you
-- karen
-- exit
-- go to sleep
-search for __________ on google
-tell a joke
-close <app_name>
-# write in notepad
-i want to write
+Virtual Assistant Voice Command Documentation
+
+Assistant Name: Karen AI
+
+Core Functionality:
+
+Karen AI is a virtual assistant designed to perform various tasks through voice commands. It can:
+
+Respond to conversational queries using a chatbot.
+Control system settings (brightness, volume).
+Open applications.
+Play music.
+Set alarms.
+Search the web.
+Tell jokes.
+General Usage:
+
+To interact with Karen, simply speak your command after the "Listening..." prompt appears in the console.
+
+Command Categories:
+
+Conversational:
+
+Any general question or statement. Karen will attempt to respond using its chatbot capabilities.
+Example: "Hello Karen," "How are you?", "What is the capital of France?"
+Specific Q&A (if trained):
+"are latter day saints christian" - Provides information about the Church of Jesus Christ of Latter-day Saints.
+(Add more specific Q&A as you train the chatbot)
+System Control:
+
+Brightness:
+"set brightness to [level]" - Sets the screen brightness to the specified level (0-100 or "max").
+Examples: "set brightness to 50", "set brightness to max", "set brightness to 10"
+Volume:
+"set volume to [level]" - Sets the system volume to the specified level (0-100 or "max" or "mute").
+Examples: "set volume to 75", "set volume to max", "set volume to mute", "set volume to 20"
+Application Management:
+
+"open [application name]" - Opens the specified application.
+Supported Applications:
+"open youtube"
+"open google"
+"open gmail"
+"open vs code"
+"open notepad"
+"open word"
+"open powerpoint"
+"open excel"
+"open task manager"
+"open paint"
+"open calculator"
+"open snipping tool"
+"open chat gpt"
+"open cmd" or "open command prompt"
+"open media player"
+"open file explorer"
+
+Media Playback:
+"play music" - Plays a random music file from your music folder (defined in the code).
+
+Alarms:
+"set alarm" - Prompts you to specify the alarm time in HH:MM (24-hour) format.
+
+Example interaction:
+User: "set alarm"
+Karen: "Please tell me the time for the alarm."
+User: "07:30" (for 7:30 AM) or "19:00" (for 7:00 PM)
+
+Web Search:
+"search for [query] on google" - Performs a Google search for the given query.
+Example: "search for best restaurants near me on google"
+
+Jokes:
+"tell a joke" or "tell me a joke" - Karen will tell a random programming-related joke.
+
+Other:
+"exit" or "go to sleep" - Closes the virtual assistant.
+Important Notes:
+
+Commands are not case-sensitive (e.g., "Open Notepad" is the same as "open notepad").
+The music folder path is hardcoded in the current version.
+The alarm functionality requires the time to be provided in 24-hour format (HH:MM).
+This documentation is subject to change as new features are added.
+Future Enhancements (Potential Commands):
+
+More advanced media controls (pause, stop, next track).
+Email management (sending emails).
+Calendar integration (setting appointments).
+System shutdown/restart.
+More robust error handling and user feedback.

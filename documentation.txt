@@ -1,0 +1,134 @@
+Documentation for the provided code:
+
+Author: Joseph D. Peralta
+
+Purpose: This Python code creates a virtual assistant named Karen for automating basic and redundant tasks on a laptop.
+
+Libraries:
+
+speech_recognition: Used for speech recognition.
+pyttsx3: Used for text-to-speech functionality.
+webbrowser: Used to open webpages in the default web browser.
+os: Used for interacting with the operating system.
+subprocess: Used to execute system commands from Python.
+pywhatkit: Used for playing songs on Youtube.
+random: Used for generating random numbers.
+time: Used for time-related operations.
+screen_brightness_control: Used to control screen brightness (requires installation).
+pycaw: Used to control audio volume (requires installation).
+pyjokes: Used to tell jokes (requires installation).
+nltk: Used for natural language processing (requires installation).
+datetime: Used for working with dates and times.
+comtypes: Used for interacting with COM objects (required for volume control).
+chatterbot: Used for creating a chatbot (requires installation).
+Functionality:
+
+Speech Recognition: Karen can listen to your voice commands using the speech_recognition library.
+Text-to-Speech: Karen can respond to your commands using the pyttsx3 library.
+Web Browsing: Karen can open websites in your default web browser using the webbrowser library.
+Operating System Interaction: Karen can interact with the operating system by opening applications, playing media, and controlling screen brightness using the os, subprocess, and screen_brightness_control libraries.
+Playing Music: Karen can play songs on Youtube using the pywhatkit library or play local music from your computer.
+Telling Jokes: Karen can tell you jokes using the pyjokes library.
+Chatbot Conversation: Karen can engage in conversation using the chatterbot library.
+Code Structure:
+
+Import Libraries: The code starts by importing the necessary libraries.
+Initialization:
+The recognizer object is initialized for speech recognition.
+The engine object is initialized for text-to-speech.
+The female voice is selected for the assistant.
+The chatbot object is initialized for chatbot functionality.
+A trainer object is created to train the chatbot with conversation data.
+run_assistant Function: This function is the main loop of the program. It calls the listen function to get a voice command and then processes the command using the process_command function.
+process_command Function: This function takes a command as input and performs the corresponding action. It includes various functionalities like:
+Writing to notepad using voice dictation.
+Opening applications like Youtube, Google, Gmail, VS Code, Notepad, etc.
+Searching for videos or songs on Youtube and playing them.
+Searching for something on Google.
+Controlling screen brightness and audio volume.
+Telling jokes.
+Responding to basic greetings and responding using the ChatterBot for more complex conversations.
+Helper Functions:
+Several helper functions are defined to perform specific tasks like:
+speak: Converts text to speech using the engine.
+listen: Listens for voice commands and converts them to text using the recognizer.
+Various functions to open applications, play music, control brightness and volume, tell jokes, search on Google, close applications, etc.
+get_chatterbot_response: Gets a response from the ChatterBot for a given user input.
+write_to_notepad: Uses pyautogui to write the spoken text into the notepad.
+open_notepad: Opens the notepad application.
+Note:
+
+This code requires the installation of some additional libraries like screen_brightness_control, pycaw, pywhatkit, nltk, and chatterbot.
+The code includes comments to explain different parts of the code.
+
+Karen AI - Voice Command Documentation
+
+Assistant Name: Karen AI
+
+Author: Joseph D. Peralta
+
+Version: (Current version based on provided code)
+
+Introduction:
+
+Karen AI is a voice-activated virtual assistant designed to automate common computer tasks. You interact with Karen by speaking commands after the "Listening..." prompt appears in the console. Commands are generally not case-sensitive.
+
+Command Categories:
+
+General Interaction:
+
+karen: Karen will respond with a greeting.
+nice: Karen will respond with "Thank you!".
+thank you: Karen will respond with "You're welcome!".
+exit or go to sleep: Closes the virtual assistant.
+Web Browsing:
+
+open youtube: Opens YouTube in your default browser.
+open google: Opens Google in your default browser.
+open gmail: Opens Gmail in your default browser.
+search for [search query] on google: Performs a Google search for the specified query. Example: search for best restaurants near me on google
+search for [video name] on youtube: Searches for the specified video on youtube. Example: search for never gonna give you up on youtube
+play [video name] on youtube: Plays the first result for the specified video on Youtube. Example: play despacito on youtube
+open chat gpt: Opens the ChatGPT website.
+Application Management:
+
+open vs code: Opens Visual Studio Code.
+open notepad: Opens Notepad.
+open word: Opens Microsoft Word.
+open powerpoint: Opens Microsoft PowerPoint.
+open excel: Opens Microsoft Excel.
+open solo leveling: Opens the Netmarble Launcher (assuming Solo Leveling is launched through it).
+open task manager: Opens the Task Manager.
+open paint: Opens Microsoft Paint.
+open calculator: Opens the Calculator.
+open snipping tool: Opens the Snipping Tool.
+open cmd or open command prompt: Opens the Command Prompt.
+open media player: Opens Windows Media Player.
+open file explorer: Opens File Explorer.
+close [application name]: Closes the specified application. Example: close notepad, close chrome
+Media Playback:
+
+play local music: Plays a random music file from the specified music folder (path hardcoded in the script).
+System Control:
+
+set brightness to [level]: Sets the screen brightness to the specified level. You can use numbers (e.g., set brightness to 50), or keywords like max, 5, 10, 20, 50, 75.
+set volume to [level]: Sets the system volume. You can use numbers (e.g., set volume to 75), or keywords like max or mute, 5, 10, 20, 50, 75.
+Time and Date:
+
+what time is it: Karen will tell you the current time.
+Alarms:
+
+set an alarm for [time] [AM/PM]: Sets an alarm for the specified time. Example: set an alarm for 7:30 AM or set an alarm for 10:00 PM.
+Note Taking/Dictation:
+
+write something: Karen will ask what you want to write and then type it into Notepad.
+dictation mode: Karen will enter dictation mode, where everything you say will be typed into Notepad until you say "stop dictation".
+Conversational Responses/Chatbot:
+
+Any other input that doesn't match the above commands will be sent to the ChatterBot for a conversational response. The chatbot has been trained on a basic English corpus and some specific Q&A about Latter-day Saints.
+Important Notes:
+
+The music folder path is hardcoded in the script and needs to be changed to your actual music folder location.
+The alarm functionality requires the time to be provided in 12-hour format with AM/PM.
+Application names for the close command must match the executable name (e.g., notepad, chrome, winword).
+Error handling is included, but there might be cases where unexpected behavior occurs.
